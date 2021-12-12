@@ -1,0 +1,24 @@
+[package]
+name = "myprogram"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "myprogram"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.18.2"
+borsh = "0.9.1"
+borsh-derive = "0.9.1"
+
+[scripts]
+test = "node tests/myprogram.js" 

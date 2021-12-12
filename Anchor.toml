@@ -1,0 +1,12 @@
+[programs.localnet]
+myprogram = "37tfCY74DTqFVkUDeouHMLvZjv8hDrEiw13HNBg6pViM"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/forduna/.config/solana/id.json"
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
